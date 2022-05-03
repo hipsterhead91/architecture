@@ -9,34 +9,21 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header__wrapper {
+.header__container {
   width: 100%;
   max-width: 1440px;
   min-height: 72px;
-  padding: 0 0 0 100px;
+  padding: 0 60px 0 60px;
   @include flex(row, center, space-between);
-
-  @media (max-width: $screen-xxl) {
-    padding: 0 0 0 80px;
-  }
-
-  @media (max-width: $screen-xl) {
-    padding: 0 0 0 60px;
-  }
 
   @media (max-width: $screen-lg) {
     min-height: 64px;
-    padding: 0 0 0 40px;
+    padding: 0 40px 0 40px;
   }
 }
 
 .header__menu {
-  margin: 0 100px 0 0;
   @include flex();
-
-  // @media (max-width: $screen-xxl) {
-  //   margin: 0 40px 0 0;
-  // }
 }
 
 .header__link-list {
@@ -60,7 +47,7 @@
   @extend %text-semibold;
   font-size: 20px;
   color: $black;
-  transition: linear 0.3s;
+  transition: linear 0.2s;
 
   @media (max-width: $screen-xl) {
     font-size: 18px;

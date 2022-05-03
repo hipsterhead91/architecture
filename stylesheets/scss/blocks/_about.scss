@@ -1,16 +1,24 @@
 .about {
   width: 100%;
-  max-width: 1440px;
   padding: 100px 0 120px 0;
-  @include flex(row, normal, center);
+  @include flex(column, center);
 
   @media (max-width: $screen-xl) {
     padding: 80px 0 100px 0;
-    @include flex(row, normal, space-between);
   }
 
-  @media (max-width: $screen-lg) {
-    padding: 60px 0 80px 0;
+  // @media (max-width: $screen-lg) {
+  //   padding: 60px 0 80px 0;
+  // }
+}
+
+.about__container {
+  width: 100%;
+  max-width: 1440px;
+  @include flex(row, normal, center);
+
+  @media (max-width: $screen-xl) {
+    @include flex(row, normal, space-between);
   }
 }
 

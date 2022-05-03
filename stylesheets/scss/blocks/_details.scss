@@ -1,4 +1,9 @@
 .details {
+  width: 100%;
+  @include flex(column, center);
+}
+
+.details__container {
   position: relative;
   width: 100%;
   max-width: 1440px;
