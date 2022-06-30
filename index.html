@@ -12,7 +12,30 @@
 
 <body>
   <dev class="page">
+
+    <!-- ШАПКА -->
     <header class="header">
+      <div class="header__container">
+        <a class="logo" href="index.html">
+          <div class="logo__image"></div>
+          <span class="logo__text">АС Квадрат</span>
+        </a>
+        <nav id="header-menu" class="header__menu">
+          <ul class="header__link-list">
+            <li class="header__list-element"><a class="header__link" href="designed.html">Проекты</a></li>
+            <li class="header__list-element"><a class="header__link" href="built.html">Реализовано</a></li>
+            <li class="header__list-element"><a class="header__link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <button id="burger-button" class="header__menu-button">
+          <span class="header__burger-element"></span>
+          <span class="header__burger-element"></span>
+          <span class="header__burger-element"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- <header class="header">
       <div class="header__container">
         <a class="logo" href="index.html">
           <div class="logo__image"></div>
@@ -20,16 +43,16 @@
         </a>
         <nav class="header__menu">
           <ul class="header__link-list">
-            <li class="header__list-element"><a class="header__link" href="projects.html">Проекты</a></li>
-            <li class="header__list-element"><a class="header__link" href="projects-done.html">Уже построено</a></li>
-            <!-- <li class="header__list-element"><a class="header__link" href="#">О нас</a></li> -->
-            <li class="header__list-element"><a class="header__link" href="#">Контакты</a></li>
+            <li class="header__list-element"><a class="header__link" href="designed.html">Проекты</a></li>
+            <li class="header__list-element"><a class="header__link" href="built.html">Реализовано</a></li>
+            <li class="header__list-element"><a class="header__link" href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
       </div>
-    </header>
+    </header> -->
 
     <main>
+      <!-- ВСТУПЛЕНИЕ -->
       <section class="intro">
         <div class="intro__container">
           <div class="intro__info">
@@ -44,6 +67,7 @@
         </div>
       </section>
 
+      <!-- О НАС -->
       <section class="about">
         <div class="about__container">
           <h2 class="about__heading">Наша идея</h2>
@@ -67,12 +91,14 @@
               воды в центральной части кольцевой структуры. В результате этого процесса образуется антициклоническое (по
               часовой стрелке) течение. В зоне, где течение достигает максимальных скоростей, усиливается вертикальный
               водообмен, что приводит к ускоренному разрушению ледового покрова.</p>
-            <a class="page-link" href="projects.html">Перейти к проектам<span class="page-link__arrow page-link__arrow_hidden">
+            <a class="page-link" href="projects.html">Перейти к проектам<span
+                class="page-link__arrow page-link__arrow_hidden">
                 -></span></a>
           </div>
         </div>
       </section>
 
+      <!-- КАРУСЕЛЬ -->
       <section class="gallery">
         <div class="gallery__container">
           <!-- В качестве слайдера использован ChiefSlider: https://github.com/itchief/ui-components/tree/master/ChiefSlider
@@ -112,6 +138,7 @@
         </div>
       </section>
 
+      <!-- УСЛУГИ -->
       <section class="services">
         <div class="services__container">
           <span class="services__subtitle">Особенности нашей работы</span>
@@ -140,16 +167,19 @@
         </div>
       </section>
 
+      <!-- СВЯЗАТЬСЯ С НАМИ -->
       <section class="details">
         <div class="details__container">
           <div class="details__overlay"></div>
-          <p class="details__paragraph">Хотите подробнее узнать о стоимости и сроках работы, уточнить любые другие детали?
+          <p class="details__paragraph">Хотите подробнее узнать о стоимости и сроках работы, уточнить любые другие
+            детали?
             Свяжитесь с нами:</p>
           <a class="details__contact" href="tel:+79114447755">+7 (911) 444 77 55</a>
         </div>
       </section>
     </main>
 
+    <!-- ПОДВАЛ -->
     <footer class="footer">
       <div class="footer__container">
         <a class="logo" href="index.html">
@@ -163,8 +193,8 @@
     </footer>
   </dev>
 
-  <script src="vendor/ChiefSlider/chief-slider.min.js"></script>
-  <script src="scripts/index.js"></script>
+  <script defer src="vendor/ChiefSlider/chief-slider.min.js"></script>
+  <script defer src="scripts/index.js"></script>
 </body>
 
 </html>

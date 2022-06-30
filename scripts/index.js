@@ -1,3 +1,16 @@
+// DOM-элемент меню
+const menu = document.querySelector('#header-menu');
+
+// DOM-элемент кнопки-бургера
+const menuButton = document.querySelector('#burger-button');
+
+menuButton.addEventListener('click', () => {
+  menu.classList.toggle('header__menu_hidden');
+});
+
+
+
+
 new ChiefSlider('.slider', {
   loop: true,
   autoplay: true,
@@ -9,8 +22,6 @@ new ChiefSlider('.slider', {
 document.addEventListener('DOMContentLoaded', function () {
   new ChiefSlider('.slider');
 });
-
-
 
 const pageLinks = document.querySelectorAll('.page-link');
 

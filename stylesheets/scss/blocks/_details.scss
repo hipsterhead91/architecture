@@ -62,7 +62,7 @@
   @extend %text-regular;
   font-size: 40px;
   color: $white;
-  transition: linear 0.2s;
+  transition: 0.2s linear;
 
   @media (max-width: $screen-xl) {
     font-size: 32px;

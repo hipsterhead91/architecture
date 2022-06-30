@@ -34,7 +34,7 @@
   font-size: 20px;
   letter-spacing: 2px;
   color: $black;
-  transition: linear 0.2s;
+  transition: 0.2s linear;
 
   &:hover {
     color: darken($color-main, $amount: 50);
@@ -47,7 +47,7 @@
   font-size: 20px;
   letter-spacing: 2px;
   color: $black;
-  transition: linear 0.2s;
+  transition: 0.2s linear;
 
   &:hover {
     color: darken($color-main, $amount: 50);
