@@ -9,20 +9,6 @@ menuButton.addEventListener('click', () => {
 });
 
 
-
-
-new ChiefSlider('.slider', {
-  loop: true,
-  autoplay: true,
-  interval: 5000,
-  swipe: true,
-  refresh: false
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  new ChiefSlider('.slider');
-});
-
 const pageLinks = document.querySelectorAll('.page-link');
 
 pageLinks.forEach(link => {
@@ -30,3 +16,25 @@ pageLinks.forEach(link => {
   link.addEventListener('mouseover', () => arrow.classList.remove('page-link__arrow_hidden'));
   link.addEventListener('mouseout', () => arrow.classList.add('page-link__arrow_hidden'));
 });
+
+
+
+
+
+
+
+
+
+
+// new ChiefSlider('.slider', {
+//   loop: true,
+//   autoplay: true,
+//   interval: 5000,
+//   swipe: true,
+//   refresh: false
+// });
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   new ChiefSlider('.slider');
+// });
+

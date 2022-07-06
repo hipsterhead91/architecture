@@ -2,6 +2,7 @@
   width: 100%;
   padding: 72px 0 0 0;
   @include flex(column, center);
+  background-color: $color-main;
 
   @media (max-width: $screen-lg) {
     padding: 64px 0 0 0;
@@ -52,93 +53,181 @@
 .projects__gallery {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 12px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 32px;
   grid-auto-flow: dense;
 }
 
-.projects__item {
+.projects__project {
   position: relative;
   width: 100%;
   height: 0;
+  padding: 0 0 120% 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-  &_sm {
-    padding: calc(100% + 6px) 0 0 0;
-    grid-column: span 1;
-    grid-row: span 1;
-  }
+  &:hover {
+    .projects__project-image div {
+      background-color: rgba(0, 0, 0, 0.0);
+    }
 
-  &_md {
-    padding: 50% 0 0 0;
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-
-  &_lg {
-    padding: calc(100% + 12px) 0 0 0;
-    grid-column: span 2;
-    grid-row: span 2;
+    .projects__project-name h2 {
+      color: darken($color-main, $amount: 50);
+    }
   }
 }
 
-.projects__item-overlay {
+.projects__project-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  transition: linear 0.2s;
+  height: 80%;
+  border-top: 12px solid $white;
+  border-left: 12px solid $white;
+  border-right: 12px solid $white;
+  
+  div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.2s linear;
+  }
 
-  &:hover {
-    background-color: transparent;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
-#project-link-01 {
-  @include bg-image('../images/project-01.jpg');
+.projects__project-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  padding: 12px 12px 12px 12px;
+  @include flex(column, center, center);
+  background-color: $white;
+
+
+
+  h2 {
+    font-size: 16px;
+    @extend %text-semibold;
+    color: $gray-darkest;
+    text-align: center;
+    transition: 0.2s linear;
+  }
 }
 
-#project-link-02 {
-  @include bg-image('../images/project-02.jpg');
-}
 
-#project-link-03 {
-  @include bg-image('../images/project-03.jpg');
-}
 
-#project-link-04 {
-  @include bg-image('../images/project-04.jpg');
-}
 
-#project-link-05 {
-  @include bg-image('../images/project-05.jpg');
-}
 
-#project-link-06 {
-  @include bg-image('../images/project-06.jpg');
-}
 
-#project-link-07 {
-  @include bg-image('../images/project-07.jpg');
-}
 
-#project-link-08 {
-  @include bg-image('../images/project-08.jpg');
-}
 
-#project-link-09 {
-  @include bg-image('../images/project-01.jpg');
-}
 
-#project-link-10 {
-  @include bg-image('../images/project-02.jpg');
-}
 
-#project-link-11 {
-  @include bg-image('../images/project-03.jpg');
-}
 
-#project-link-12 {
-  @include bg-image('../images/project-04.jpg');
-}
+
+
+
+// .projects__gallery {
+//   width: 100%;
+//   display: grid;
+//   grid-template-columns: repeat(6, 1fr);
+//   grid-gap: 12px;
+//   grid-auto-flow: dense;
+// }
+
+// .projects__item {
+//   position: relative;
+//   width: 100%;
+//   height: 0;
+
+//   &_sm {
+//     padding: calc(100% + 6px) 0 0 0;
+//     grid-column: span 1;
+//     grid-row: span 1;
+//   }
+
+//   &_md {
+//     padding: 50% 0 0 0;
+//     grid-column: span 2;
+//     grid-row: span 1;
+//   }
+
+//   &_lg {
+//     padding: calc(100% + 12px) 0 0 0;
+//     grid-column: span 2;
+//     grid-row: span 2;
+//   }
+// }
+
+// .projects__item-overlay {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.3);
+//   transition: linear 0.2s;
+
+//   &:hover {
+//     background-color: transparent;
+//   }
+// }
+
+// #project-link-01 {
+//   @include bg-image('../images/project-01.jpg');
+// }
+
+// #project-link-02 {
+//   @include bg-image('../images/project-02.jpg');
+// }
+
+// #project-link-03 {
+//   @include bg-image('../images/project-03.jpg');
+// }
+
+// #project-link-04 {
+//   @include bg-image('../images/project-04.jpg');
+// }
+
+// #project-link-05 {
+//   @include bg-image('../images/project-05.jpg');
+// }
+
+// #project-link-06 {
+//   @include bg-image('../images/project-06.jpg');
+// }
+
+// #project-link-07 {
+//   @include bg-image('../images/project-07.jpg');
+// }
+
+// #project-link-08 {
+//   @include bg-image('../images/project-08.jpg');
+// }
+
+// #project-link-09 {
+//   @include bg-image('../images/project-01.jpg');
+// }
+
+// #project-link-10 {
+//   @include bg-image('../images/project-02.jpg');
+// }
+
+// #project-link-11 {
+//   @include bg-image('../images/project-03.jpg');
+// }
+
+// #project-link-12 {
+//   @include bg-image('../images/project-04.jpg');
+// }

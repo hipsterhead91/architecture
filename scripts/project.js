@@ -1,8 +1,6 @@
 const lightbox = GLightbox({
-  touchNavigation: true,
-  loop: true,
-  autoplayVideos: true,
+  selector: '.project__image',
   openEffect: 'none',
   closeEffect: 'none',
-  slideEffect: 'none',
+  loop: true,
 });

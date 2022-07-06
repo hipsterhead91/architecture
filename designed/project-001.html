@@ -6,39 +6,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Проект</title>
-  <link rel="stylesheet" href="node_modules/glightbox/dist/css/glightbox.css" />
-  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="../vendor/glightbox/glightbox.min.css">
+  <link rel="stylesheet" href="../stylesheets/main.css">
 </head>
 
 <body>
   <dev class="page">
+    <!-- ШАПКА -->
     <header class="header">
       <div class="header__container">
         <a class="logo" href="index.html">
           <div class="logo__image"></div>
           <span class="logo__text">АС Квадрат</span>
         </a>
-        <nav class="header__menu">
+        <nav id="header-menu" class="header__menu header__menu_hidden">
           <ul class="header__link-list">
-            <li class="header__list-element"><a class="header__link" href="projects.html">Проекты</a></li>
-            <li class="header__list-element"><a class="header__link" href="projects-done.html">Уже построено</a></li>
-            <!-- <li class="header__list-element"><a class="header__link" href="#">О нас</a></li> -->
-            <li class="header__list-element"><a class="header__link" href="#">Контакты</a></li>
+            <li class="header__list-element"><a class="header__link" href="designed.html">Проекты</a></li>
+            <li class="header__list-element"><a class="header__link" href="built.html">Реализовано</a></li>
+            <li class="header__list-element"><a class="header__link" href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
+        <button id="burger-button" class="header__menu-button">
+          <span class="header__burger-element"></span>
+          <span class="header__burger-element"></span>
+          <span class="header__burger-element"></span>
+        </button>
       </div>
     </header>
 
     <main>
+      <!-- ПРОЕКТ -->
       <section class="project">
         <div class="project__container">
           <div class="project__info">
-            <h1 class="project__heading">Название проекта</h1>
+            <h1 class="project__heading">Жилой дом "Ромашка"</h1>
             <p class="project__paragraph"><span class="project__subheading">Описание:</span>Двухэтажный индивидуальный
               жилой дом с террасой.</p>
-            <p class="project__paragraph"><span class="project__subheading">Общая площадь:</span>500 кв.м</p>
-            <p class="project__paragraph"><span class="project__subheading">Площадь застройки:</span>300 кв.м</p>
-            <p class="project__paragraph"><span class="project__subheading">Жилая площадь:</span>200 кв.м</p>
+            <p class="project__paragraph"><span class="project__subheading">Общая площадь:</span>73,50 кв.м</p>
+            <p class="project__paragraph"><span class="project__subheading">Площадь застройки:</span>64,90 кв.м</p>
+            <p class="project__paragraph"><span class="project__subheading">Жилая площадь:</span>31,40 кв.м</p>
             <span class="project__subheading">Строительные конструкции и материалы:</span>
             <ul class="project__details">
               <li class="project__detail">Бергкамп родился в западной части Амстердама. Он был младшим из четверых
@@ -60,47 +66,48 @@
                 любимых дисциплин стало толкание ядра.</li>
             </ul>
           </div>
-          <div class="project__gallery-container">
-            <div class="project__gallery">
-              <a href="images/project-01.jpg" class="project__img project__img_big glightbox">
-                <div class="project__img-overlay"></div>
-                <img src="images/project-01.jpg" class="project__min-img" />
+
+          <div class="project__gallery">
+            <div class="project__gallery-item project__gallery-item_main">
+              <a href="./project-001/project-001-01.jpg" class="project__image" data-gallery="gallery">
+                <div></div>
+                <img src="./project-001/project-001-01.jpg" alt="image" />
               </a>
-              <a href="images/project-02.jpg" class="project__img glightbox">
-                <div class="project__img-overlay"></div>
-                <img src="images/project-02.jpg" class="project__min-img" />
+            </div>
+            <div class="project__gallery-item">
+              <a href="./project-001/project-001-02.jpg" class="project__image" data-gallery="gallery">
+                <div></div>
+                <img src="./project-001/project-001-02.jpg" alt="image" />
               </a>
-              <a href="images/project-03.jpg" class="project__img glightbox">
-                <div class="project__img-overlay"></div>
-                <img src="images/project-03.jpg" class="project__min-img" />
+            </div>
+            <div class="project__gallery-item">
+              <a href="./project-001/project-001-03.jpg" class="project__image" data-gallery="gallery">
+                <div></div>
+                <img src="./project-001/project-001-03.jpg" alt="image" />
               </a>
-              <a href="images/project-04.jpg" class="project__img glightbox">
-                <div class="project__img-overlay"></div>
-                <img src="images/project-04.jpg" class="project__min-img" />
+            </div>
+            <div class="project__gallery-item">
+              <a href="./project-001/project-001-04.jpg" class="project__image" data-gallery="gallery">
+                <div></div>
+                <img src="./project-001/project-001-04.jpg" alt="image" />
               </a>
-              <a href="images/project-05.jpg" class="project__img glightbox">
-                <div class="project__img-overlay"></div>
-                <img src="images/project-05.jpg" class="project__min-img" />
+            </div>
+            <div class="project__gallery-item">
+              <a href="./project-001/project-001-05.jpg" class="project__image" data-gallery="gallery">
+                <div></div>
+                <img src="./project-001/project-001-05.jpg" alt="image" />
               </a>
-              <a href="images/project-06.jpg" class="project__img glightbox">
-                <div class="project__img-overlay"></div>
-                <img src="images/project-06.jpg" class="project__min-img" />
+            </div>
+            <div class="project__gallery-item">
+              <a href="./project-001/project-001-06.jpg" class="project__image" data-gallery="gallery">
+                <div></div>
+                <img src="./project-001/project-001-06.jpg" alt="image" />
               </a>
-              <a href="images/project-07.jpg" class="project__img glightbox">
-                <div class="project__img-overlay"></div>
-                <img src="images/project-07.jpg" class="project__min-img" />
-              </a>
-              <a href="images/project-08.jpg" class="project__img glightbox">
-                <div class="project__img-overlay"></div>
-                <img src="images/project-08.jpg" class="project__min-img" />
-              </a>
-              <a href="images/project-09.jpg" class="project__img glightbox">
-                <div class="project__img-overlay"></div>
-                <img src="images/project-09.jpg" class="project__min-img" />
-              </a>
-              <a href="images/project-10.jpg" class="project__img glightbox">
-                <div class="project__img-overlay"></div>
-                <img src="images/project-10.jpg" class="project__min-img" />
+            </div>
+            <div class="project__gallery-item">
+              <a href="./project-001/project-001-05.jpg" class="project__image" data-gallery="gallery">
+                <div></div>
+                <img src="./project-001/project-001-05.jpg" alt="image" />
               </a>
             </div>
           </div>
@@ -121,8 +128,8 @@
     </footer>
   </dev>
 
-  <script src="node_modules/glightbox/dist/js/glightbox.min.js"></script>
-  <script src="scripts/project.js"></script>
+  <script src="../vendor/glightbox/glightbox.min.js"></script>
+  <script src="../scripts/project.js"></script>
 </body>
 
 </html>

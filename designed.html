@@ -11,24 +11,31 @@
 
 <body>
   <dev class="page">
+    <!-- ШАПКА -->
     <header class="header">
       <div class="header__container">
         <a class="logo" href="index.html">
           <div class="logo__image"></div>
           <span class="logo__text">АС Квадрат</span>
         </a>
-        <nav class="header__menu">
+        <nav id="header-menu" class="header__menu header__menu_hidden">
           <ul class="header__link-list">
-            <li class="header__list-element"><a class="header__link" href="projects.html">Проекты</a></li>
-            <li class="header__list-element"><a class="header__link" href="projects-done.html">Уже построено</a></li>
-            <!-- <li class="header__list-element"><a class="header__link" href="#">О нас</a></li> -->
-            <li class="header__list-element"><a class="header__link" href="#">Контакты</a></li>
+            <li class="header__list-element"><a class="header__link" href="designed.html">Проекты</a></li>
+            <li class="header__list-element"><a class="header__link" href="built.html">Реализовано</a></li>
+            <li class="header__list-element"><a class="header__link" href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
+        <button id="burger-button" class="header__menu-button">
+          <span class="header__burger-element"></span>
+          <span class="header__burger-element"></span>
+          <span class="header__burger-element"></span>
+        </button>
       </div>
     </header>
 
     <main>
+
+      <!-- СПИСОК ПРОЕКТОВ -->
       <section class="projects">
         <div class="projects__container">
 
@@ -36,48 +43,85 @@
           <p class="projects__paragraph">Каждый жилой дом проектируется индивидуально, исходя из особенностей участка и потребностей заказчика. Здесь вы можете посмотреть примеры некоторых наших проектов, чтобы вам было от чего отталкиваться. Или, если хотите, посмотрите на <a href="projects-done.html">дома, уже построенные нами</a>.</p>
 
           <div class="projects__gallery">
-            <a id="project-link-01" class="projects__item projects__item_lg" href="project.html">
-              <div class="projects__item-overlay"></div>
+            <a href="./designed/project-001.html" class="projects__project">
+              <div class="projects__project-image">
+                <div></div>
+                <img src="./designed/project-001/project-001-01.jpg">
+              </div>
+              <div class="projects__project-name">
+                <h2>Индивидуальный жилой дом #1</h2>
+              </div>
             </a>
-            <a id="project-link-02" class="projects__item projects__item_sm" href="project.html">
-              <div class="projects__item-overlay"></div>
+            <a href="./designed/project-001.html" class="projects__project">
+              <div class="projects__project-image">
+                <div></div>
+                <img src="./designed/project-001/project-001-02.jpg">
+              </div>
+              <div class="projects__project-name">
+                <h2>Дачный дом #2</h2>
+              </div>
             </a>
-            <a id="project-link-03" class="projects__item projects__item_md" href="project.html">
-              <div class="projects__item-overlay"></div>
+            <a href="./designed/project-001.html" class="projects__project">
+              <div class="projects__project-image">
+                <div></div>
+                <img src="./designed/project-001/project-001-03.jpg">
+              </div>
+              <div class="projects__project-name">
+                <h2>Жилой дом #3</h2>
+              </div>
             </a>
-            <a id="project-link-04" class="projects__item projects__item_sm" href="project.html">
-              <div class="projects__item-overlay"></div>
+            <a href="./designed/project-001.html" class="projects__project">
+              <div class="projects__project-image">
+                <div></div>
+                <img src="./designed/project-001/project-001-04.jpg">
+              </div>
+              <div class="projects__project-name">
+                <h2>Двухэтажный индивидуальный жилой дом #4</h2>
+              </div>
             </a>
-            <a id="project-link-05" class="projects__item projects__item_md" href="project.html">
-              <div class="projects__item-overlay"></div>
+            <a href="./designed/project-001.html" class="projects__project">
+              <div class="projects__project-image">
+                <div></div>
+                <img src="./designed/project-001/project-001-04.jpg">
+              </div>
+              <div class="projects__project-name">
+                <h2>Жилой дом "Ромашка" #5</h2>
+              </div>
             </a>
-            <a id="project-link-06" class="projects__item projects__item_lg" href="project.html">
-              <div class="projects__item-overlay"></div>
+            <a href="./designed/project-001.html" class="projects__project">
+              <div class="projects__project-image">
+                <div></div>
+                <img src="./designed/project-001/project-001-03.jpg">
+              </div>
+              <div class="projects__project-name">
+                <h2>Дачный дом с гаражом и баней #6</h2>
+              </div>
             </a>
-            <a id="project-link-07" class="projects__item projects__item_md" href="project.html">
-              <div class="projects__item-overlay"></div>
+            <a href="./designed/project-001.html" class="projects__project">
+              <div class="projects__project-image">
+                <div></div>
+                <img src="./designed/project-001/project-001-02.jpg">
+              </div>
+              <div class="projects__project-name">
+                <h2>Индивидуальный жилой дом с сауной #7</h2>
+              </div>
             </a>
-            <a id="project-link-08" class="projects__item projects__item_sm" href="project.html">
-              <div class="projects__item-overlay"></div>
-            </a>
-            <a id="project-link-09" class="projects__item projects__item_sm" href="project.html">
-              <div class="projects__item-overlay"></div>
-            </a>
-            <a id="project-link-10" class="projects__item projects__item_sm" href="project.html">
-              <div class="projects__item-overlay"></div>
-            </a>
-            <a id="project-link-11" class="projects__item projects__item_lg" href="project.html">
-              <div class="projects__item-overlay"></div>
-            </a>
-            <a id="project-link-12" class="projects__item projects__item_sm" href="project.html">
-              <div class="projects__item-overlay"></div>
+            <a href="./designed/project-001.html" class="projects__project">
+              <div class="projects__project-image">
+                <div></div>
+                <img src="./designed/project-001/project-001-01.jpg">
+              </div>
+              <div class="projects__project-name">
+                <h2>Дачный #8</h2>
+              </div>
             </a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <!-- ПОДВАЛ -->
+    <footer class="footer footer_colored">
       <div class="footer__container">
         <a class="logo" href="index.html">
           <div class="logo__image logo__image_small logo__image_monocolor"></div>
@@ -90,6 +134,7 @@
     </footer>
   </dev>
 
+  <script src="scripts/projects.js"></script>
 </body>
 
 </html>
