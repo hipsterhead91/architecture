@@ -26,15 +26,15 @@ pageLinks.forEach(link => {
 
 
 
-// new ChiefSlider('.slider', {
-//   loop: true,
-//   autoplay: true,
-//   interval: 5000,
-//   swipe: true,
-//   refresh: false
-// });
+new ChiefSlider('.slider', {
+  loop: true,
+  autoplay: true,
+  interval: 5000,
+  swipe: true,
+  refresh: false
+});
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   new ChiefSlider('.slider');
-// });
+document.addEventListener('DOMContentLoaded', function () {
+  new ChiefSlider('.slider');
+});
 
