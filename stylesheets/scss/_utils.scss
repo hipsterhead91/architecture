@@ -13,7 +13,10 @@ $black:             #0f0f0f; // "рабочий" чёрный, более при
 $blackest:          #000000; // максимально чёрный, если потребуется
 
 $color-main:        #ECE7E4;
-$color-second:      #7F0000;
+// $color-main:        #E2DEDC;
+// $color-second:      #7F0000;
+// $color-second:      #7F4A2B;
+$color-second:      #7F4528;
 
 $screen-xxl:           1400px;
 $screen-xl:            1200px;
@@ -79,7 +82,6 @@ $screen-xxs:            360px;
   font-style: normal;
   font-weight: 900;
 }
-
 
 
 // МИКСИНЫ (ПРИМЕСИ)

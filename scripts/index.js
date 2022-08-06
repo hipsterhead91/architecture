@@ -29,7 +29,7 @@ pageLinks.forEach(link => {
 new ChiefSlider('.slider', {
   loop: true,
   autoplay: true,
-  interval: 5000,
+  interval: 10000,
   swipe: true,
   refresh: false
 });

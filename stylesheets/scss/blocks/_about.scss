@@ -62,6 +62,15 @@
   line-height: 160%;
   color: $black;
 
+  a {
+    color: $color-second;
+  }
+
+  span {
+    @extend %text-semibold;
+    color: $gray-darkest;
+  }
+
   @media (max-width: $screen-lg) {
     margin: 0 0 12px 0;
     font-size: 14px;
