@@ -8,11 +8,21 @@
   margin: 0 12px 0 0;
   @include bg-image('../../../images/logo.png');
   user-select: none;
+
+  &_small {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 0;
+  }
 }
 
 .logo__text {
   height: 48px;
   @include flex(column, center, space-between);
+
+  &_small {
+    height: 40px;
+  }
 }
 
 .logo__heading {
@@ -24,6 +34,10 @@
   text-transform: uppercase;
   color: $black;
   user-select: none;
+
+  &_small {
+    font-size: 26px;
+  }
 }
 
 .logo__subheading {
@@ -35,6 +49,10 @@
   text-transform: uppercase;
   color: $black;
   user-select: none;
+
+  &_small {
+    font-size: 8px;
+  }
 }
 
 
