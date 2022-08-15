@@ -24,7 +24,7 @@
 
 .about__heading {
   margin: 0 100px 0 0;
-  @extend %text-regular;
+  @extend %inter-regular;
   font-size: 32px;
   color: $black;
   line-height: 110%;
@@ -57,18 +57,14 @@
 
 .about__paragraph {
   margin: 0 0 16px 0;
-  @extend %text-regular;
+  @extend %inter-regular;
   font-size: 16px;
   line-height: 160%;
   color: $black;
 
   a {
+    @extend %inter-medium;
     color: $color-second;
-  }
-
-  span {
-    @extend %text-semibold;
-    color: $gray-darkest;
   }
 
   @media (max-width: $screen-lg) {
@@ -76,6 +72,17 @@
     font-size: 14px;
     line-height: 140%;
   }
+}
+
+.about__paragraph_italic {
+  // @extend %inter-semibold;
+  @extend %roboto-regular-italic;
+  color: $black;
+}
+
+.about__paragraph_bold {
+  @extend %inter-semibold;
+  color: $black;
 }
 
 .about__paragraph:last-of-type {

@@ -34,32 +34,32 @@
 
 .footer__phone {
   margin: 16px 0 0 0;
-  @extend %text-extralight;
+  @extend %inter-extralight;
   font-size: 20px;
   letter-spacing: 2px;
   color: $black;
   transition: 0.2s linear;
 
   &:hover {
-    color: darken($color-main, $amount: 50);
+    color: $color-second;
   }
 }
 
 .footer__email {
   margin: 12px 0 12px 0;
-  @extend %text-extralight;
+  @extend %inter-extralight;
   font-size: 20px;
   letter-spacing: 2px;
   color: $black;
   transition: 0.2s linear;
 
   &:hover {
-    color: darken($color-main, $amount: 50);
+    color: $color-second;
   }
 }
 
 .footer__address {
-  @extend %text-extralight;
+  @extend %inter-extralight;
   font-size: 20px;
   letter-spacing: 2px;
   color: $black;

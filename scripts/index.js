@@ -18,9 +18,16 @@ pageLinks.forEach(link => {
 });
 
 
+const overlay = document.querySelector('.details__overlay');
+const phone = document.querySelector('.details__contact');
 
+phone.addEventListener('mouseover', () => {
+  overlay.classList.add('details__overlay_blurred')
+})
 
-
+phone.addEventListener('mouseout', () => {
+  overlay.classList.remove('details__overlay_blurred')
+})
 
 
 

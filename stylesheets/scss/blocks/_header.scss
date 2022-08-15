@@ -70,7 +70,7 @@
 }
 
 .header__link {
-  @extend %text-semibold;
+  @extend %inter-semibold;
   font-size: 20px;
   color: $black;
   transition: 0.2s linear;
@@ -84,7 +84,7 @@
   }
 
   &:hover {
-    color: darken($color-main, $amount: 50);
+    color: $color-second;
   }
 }
 

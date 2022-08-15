@@ -24,12 +24,12 @@
 }
 
 .services__subtitle {
-  @extend %text-extralight;
+  @extend %inter-extralight;
   font-size: 20px;
   letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
-  color: darken($color-main, $amount: 50);
+  color: $color-second;
 
   @media (max-width: $screen-xl) {
     font-size: 18px;
@@ -42,7 +42,7 @@
 
 .services__heading {
   margin: 8px 0 56px 0;
-  @extend %text-semibold;
+  @extend %inter-semibold;
   font-size: 40px;
   text-align: center;
   color: $gray-darkest;
@@ -78,7 +78,9 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: darken($color-main, $amount: 10);
+  background-color: #DCD9D4;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+  background-blend-mode: soft-light,screen;
 
   @media (max-width: $screen-lg) {
     width: 80px;
@@ -88,10 +90,10 @@
 
 .services__subheading {
   margin: 24px 0 12px 0;
-  @extend %text-regular;
+  @extend %inter-regular;
   font-size: 18px;
   text-align: center;
-  color: darken($color-main, $amount: 50);
+  color: $color-second;
 
   @media (max-width: $screen-xl) {
     margin: 20px 0 8px 0;
@@ -104,7 +106,7 @@
 }
 
 .services__paragraph {
-  @extend %text-regular;
+  @extend %inter-regular;
   font-size: 16px;
   line-height: 160%;
   text-align: center;

@@ -7,7 +7,7 @@
   position: relative;
   width: 100%;
   max-width: 1440px;
-  height: 480px;
+  height: 600px;
   padding: 0 100px 0 100px;
   @include flex(column, center, center);
   @include bg-image('../images/details.jpg');
@@ -34,13 +34,19 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.2s linear;
+  backdrop-filter: none;
+}
+
+.details__overlay_blurred {
+  backdrop-filter: blur(5px);
 }
 
 .details__paragraph {
   z-index: 2;
   max-width: 720px;
   margin: 0 0 20px 0;
-  @extend %text-extralight;
+  @extend %inter-extralight;
   font-size: 24px;
   line-height: 160%;
   text-align: center;
@@ -59,7 +65,7 @@
 
 .details__contact {
   z-index: 2;
-  @extend %text-regular;
+  @extend %inter-regular;
   font-size: 40px;
   color: $white;
   transition: 0.2s linear;
@@ -73,6 +79,6 @@
   }
 
   &:hover {
-    color: darken($color-main, $amount: 10);
+    color: #ada095;
   }
 }

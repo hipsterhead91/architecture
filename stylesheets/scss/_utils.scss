@@ -13,10 +13,7 @@ $black:             #0f0f0f; // "рабочий" чёрный, более при
 $blackest:          #000000; // максимально чёрный, если потребуется
 
 $color-main:        #ECE7E4;
-// $color-main:        #E2DEDC;
-// $color-second:      #7F0000;
-// $color-second:      #7F4A2B;
-$color-second:      #7F4528;
+$color-second:      #7B6456;
 
 $screen-xxl:           1400px;
 $screen-xl:            1200px;
@@ -29,59 +26,132 @@ $screen-xxs:            360px;
 
 // ШАБЛОНЫ
 
-%text-thin {
+%inter-thin {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 100;
 }
 
-%text-extralight {
+%inter-extralight {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 200;
 }
 
-%text-light {
+%inter-light {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 300;
 }
 
-%text-regular {
+%inter-regular {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
-%text-medium {
+%inter-medium {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
 }
 
-%text-semibold {
+%inter-semibold {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
 }
 
-%text-bold {
+%inter-bold {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
 }
 
-%text-extrabold {
+%inter-extrabold {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 800;
 }
 
-%text-black {
+%inter-black {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 900;
 }
+
+%roboto-thin {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+%roboto-thin-italic {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 100;
+}
+
+%roboto-light {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+%roboto-light-italic {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+%roboto-regular {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+%roboto-regular-italic {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+%roboto-medium {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+%roboto-medium-italic {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+%roboto-bold {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+%roboto-bold-italic {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+%roboto-black {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+}
+
+%roboto-black-italic {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 900;
+}
+
 
 
 // МИКСИНЫ (ПРИМЕСИ)

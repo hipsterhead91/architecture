@@ -27,7 +27,7 @@
 
 .project__heading {
   margin: 0 0 24px 0;
-  @extend %text-regular;
+  @extend %inter-regular;
   font-size: 32px;
   line-height: 140%;
   color: $black;
@@ -35,7 +35,7 @@
 
 .project__paragraph {
   margin: 0 0 8px 0;
-  @extend %text-regular;
+  @extend %inter-regular;
   font-size: 16px;
   line-height: 140%;
   color: $gray-darkest;
@@ -43,7 +43,7 @@
 
 .project__subheading {
   margin: 0 8px 0 0;
-  @extend %text-semibold;
+  @extend %inter-semibold;
   font-size: 16px;
   line-height: 140%;
   color: $black;
@@ -51,7 +51,7 @@
 
 .project__detail {
   margin: 8px 0 0 20px;
-  @extend %text-regular;
+  @extend %inter-regular;
   font-size: 16px;
   line-height: 120%;
   color: $gray-darkest;
