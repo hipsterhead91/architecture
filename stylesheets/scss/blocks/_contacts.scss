@@ -1,0 +1,60 @@
+.contacts {
+  width: 100%;
+  padding: 72px 0 0 0;
+  @include flex(column, center);
+
+  @media (max-width: $screen-lg) {
+    padding: 64px 0 0 0;
+  }
+}
+
+.contacts__container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 40px 60px 0 60px;
+  @include flex(column);
+
+  @media (max-width: $screen-lg) {
+    padding: 40px 40px 0 40px;
+  }
+}
+
+.contacts__heading {
+  padding: 0 0 0 12px;
+  @extend %inter-regular;
+  font-size: 32px;
+  line-height: 140%;
+  color: $gray-darkest;
+}
+
+.contacts__paragraph {
+  width: calc(50% - 6px);
+  padding: 8px 12px 8px 12px;
+  margin: 0 0 24px 0;
+  @extend %inter-regular;
+  font-size: 16px;
+  line-height: 140%;
+  color: $gray-dark;
+
+  span {
+    @extend %inter-semibold;
+  }
+}
+
+.contacts__contact {
+  margin: 0 0 12px 0;
+  @include flex();
+}
+
+.contacts__type {
+  margin: 0 8px 0 0;
+  @extend %inter-semibold;
+  font-size: 24px;
+  color: $gray-darkest;
+}
+
+.contacts__link {
+  @extend %inter-regular;
+  font-size: 24px;
+  color: $gray-darkest;
+}

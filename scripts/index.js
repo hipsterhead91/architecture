@@ -36,7 +36,7 @@ phone.addEventListener('mouseout', () => {
 new ChiefSlider('.slider', {
   loop: true,
   autoplay: true,
-  interval: 10000,
+  interval: 8000,
   swipe: true,
   refresh: false
 });

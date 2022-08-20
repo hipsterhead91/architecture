@@ -39,16 +39,6 @@
   span {
     @extend %inter-semibold;
   }
-
-  a {
-    font-weight: 500;
-    color: $color-second;
-    transition: linear 0.2s;
-
-    &:hover {
-      color: $color-second;
-    }
-  }
 }
 
 .projects__gallery {
