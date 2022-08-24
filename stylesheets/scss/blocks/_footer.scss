@@ -24,7 +24,7 @@
 .footer__container {
   width: 100%;
   max-width: 1440px;
-  padding: 0 60px 0 60px;
+  // padding: 0 60px 0 60px;
   @include flex(column);
 
   @media (max-width: $screen-lg) {
@@ -41,7 +41,7 @@
   transition: 0.2s linear;
 
   &:hover {
-    color: $color-second;
+    color: $color-main;
   }
 }
 
@@ -54,7 +54,7 @@
   transition: 0.2s linear;
 
   &:hover {
-    color: $color-second;
+    color: $color-main;
   }
 }
 

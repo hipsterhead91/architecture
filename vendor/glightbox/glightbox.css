@@ -30,10 +30,10 @@
 }
 
 .glightbox-container .gslider {
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: -webkit-transform 0.4s ease;
-  transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
   height: 100%;
   left: 0;
   top: 0;
@@ -371,8 +371,8 @@
 }
 
 .gdesc-open .gslide-media {
-  -webkit-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
   opacity: 0.4;
 }
 
@@ -381,14 +381,14 @@
 }
 
 .gdesc-closed .gslide-media {
-  -webkit-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
   opacity: 1;
 }
 
 .greset {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .gabsolute {
@@ -578,43 +578,43 @@ iframe.wait-autoplay {
 /*CSS Animations*/
 
 .gfadeIn {
-  -webkit-animation: gfadeIn 0.5s ease;
-  animation: gfadeIn 0.5s ease;
+  -webkit-animation: gfadeIn 0.2s linear;
+  animation: gfadeIn 0.2s linear;
 }
 
 .gfadeOut {
-  -webkit-animation: gfadeOut 0.5s ease;
-  animation: gfadeOut 0.5s ease;
+  -webkit-animation: gfadeOut 0.2s linear;
+  animation: gfadeOut 0.2s linear;
 }
 
 .gslideOutLeft {
-  -webkit-animation: gslideOutLeft 0.3s ease;
-  animation: gslideOutLeft 0.3s ease;
+  -webkit-animation: gslideOutLeft 0.3s linear;
+  animation: gslideOutLeft 0.3s linear;
 }
 
 .gslideInLeft {
-  -webkit-animation: gslideInLeft 0.3s ease;
-  animation: gslideInLeft 0.3s ease;
+  -webkit-animation: gslideInLeft 0.3s linear;
+  animation: gslideInLeft 0.3s linear;
 }
 
 .gslideOutRight {
-  -webkit-animation: gslideOutRight 0.3s ease;
-  animation: gslideOutRight 0.3s ease;
+  -webkit-animation: gslideOutRight 0.3s linear;
+  animation: gslideOutRight 0.3s linear;
 }
 
 .gslideInRight {
-  -webkit-animation: gslideInRight 0.3s ease;
-  animation: gslideInRight 0.3s ease;
+  -webkit-animation: gslideInRight 0.3s linear;
+  animation: gslideInRight 0.3s linear;
 }
 
 .gzoomIn {
-  -webkit-animation: gzoomIn 0.5s ease;
-  animation: gzoomIn 0.5s ease;
+  -webkit-animation: gzoomIn 0.2s linear;
+  animation: gzoomIn 0.2s linear;
 }
 
 .gzoomOut {
-  -webkit-animation: gzoomOut 0.5s ease;
-  animation: gzoomOut 0.5s ease;
+  -webkit-animation: gzoomOut 0.2s linear;
+  animation: gzoomOut 0.2s linear;
 }
 
 @-webkit-keyframes lightboxLoader {

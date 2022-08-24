@@ -1,6 +1,7 @@
 const lightbox = GLightbox({
-  selector: '.project__image',
-  openEffect: 'none',
-  closeEffect: 'none',
+  selector: '.project__image-wrapper',
+  // openEffect: 'none',
+  // closeEffect: 'none',
+  slideEffect: 'slide',
   loop: true,
 });

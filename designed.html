@@ -12,7 +12,7 @@
 <body>
   <dev class="page">
 
-    <!-- ШАПКА -->
+    <!-- HEADER -->
     <header class="header">
       <div class="header__container">
         <a class="logo" href="./index.html">
@@ -24,7 +24,7 @@
         </a>
         <nav id="header-menu" class="header__menu header__menu_hidden">
           <ul class="header__link-list">
-            <li class="header__list-element"><a class="header__link" href="./designed.html">Наши проекты</a></li>
+            <li class="header__list-element"><a class="header__link" href="#">Наши проекты</a></li>
             <li class="header__list-element"><a class="header__link" href="./contacts.html">Контакты</a></li>
           </ul>
         </nav>
@@ -37,173 +37,218 @@
     </header>
 
     <main>
-
-      <!-- СПИСОК ПРОЕКТОВ -->
+      <!-- PROJECTS -->
       <section class="projects">
         <div class="projects__container">
-
+          <a class="projects__back-link" href="./index.html">❮ Назад на главную</a>
           <h1 class="projects__heading">Примеры проектов</h1>
-          <p class="projects__paragraph">Каждый жилой дом проектируется индивидуально, исходя из особенностей участка и
-            потребностей заказчика. Рендеры <span>намеренно выполнены в однотипных сдержанных тонах</span>, чтобы не отвлекать от
-            форм — по Вашему желанию мы можем реализовать в проекте любые цвета и материалы.</p>
-          <div class="projects__gallery">
+          <p class="projects__description">Каждый жилой дом проектируется индивидуально, исходя из особенностей участка
+            и потребностей заказчика. Рендеры <span class="projects__description-bold">намеренно выполнены в однотипных
+              сдержанных тонах</span>, чтобы не отвлекать от форм — по Вашему желанию мы можем реализовать в проекте
+            любые цвета и материалы.</p>
+          <ul class="projects__list">
 
             <!-- d014 -->
-            <a href="./designed/d014.html" class="projects__project">
-              <div class="projects__project-image">
-                <img src="./designed/d014/d014_01.jpg">
-              </div>
-              <div class="projects__project-name">
-                <h2>Проект "Гильге-1"</h2>
-              </div>
-            </a>
+            <li class="projects__list-element">
+              <a class="projects__card" href="./designed/d014.html">
+                <div class="projects__image-wrapper">
+                  <div class="projects__image-overlay"></div>
+                  <img class="projects__image" src="./designed/d014/d014_01_thumb.jpg" alt="Заглавное изображение проекта.">
+                </div>
+                <div class="projects__nameplate">
+                  <h2 class="projects__name">Проект "Гильге-1"</h2>
+                </div>
+              </a>
+            </li>
 
             <!-- d010 -->
-            <a href="./designed/d010.html" class="projects__project">
-              <div class="projects__project-image">
-                <img src="./designed/d010/d010_01.jpg">
-              </div>
-              <div class="projects__project-name">
-                <h2>Проект "Гильге-2"</h2>
-              </div>
-            </a>
+            <li class="projects__list-element">
+              <a class="projects__card" href="./designed/d010.html">
+                <div class="projects__image-wrapper">
+                  <div class="projects__image-overlay"></div>
+                  <img class="projects__image" src="./designed/d010/d010_01_thumb.jpg" alt="Заглавное изображение проекта.">
+                </div>
+                <div class="projects__nameplate">
+                  <h2 class="projects__name">Проект "Гильге-2"</h2>
+                </div>
+              </a>
+            </li>
 
             <!-- d005 -->
-            <a href="./designed/d005.html" class="projects__project">
-              <div class="projects__project-image">
-                <img src="./designed/d005/d005_01.jpg">
-              </div>
-              <div class="projects__project-name">
-                <h2>Проект "Гильге-3"</h2>
-              </div>
-            </a>
+            <li class="projects__list-element">
+              <a class="projects__card" href="./designed/d005.html">
+                <div class="projects__image-wrapper">
+                  <div class="projects__image-overlay"></div>
+                  <img class="projects__image" src="./designed/d005/d005_01_thumb.jpg" alt="Заглавное изображение проекта.">
+                </div>
+                <div class="projects__nameplate">
+                  <h2 class="projects__name">Проект "Гильге-3"</h2>
+                </div>
+              </a>
+            </li>
 
             <!-- d002 -->
-            <a href="./designed/d002.html" class="projects__project">
-              <div class="projects__project-image">
-                <img src="./designed/d002/d002_01.jpg">
-              </div>
-              <div class="projects__project-name">
-                <h2>Проект "Шервинта-1"</h2>
-              </div>
-            </a>
+            <li class="projects__list-element">
+              <a class="projects__card" href="./designed/d002.html">
+                <div class="projects__image-wrapper">
+                  <div class="projects__image-overlay"></div>
+                  <img class="projects__image" src="./designed/d002/d002_01_thumb.jpg" alt="Заглавное изображение проекта.">
+                </div>
+                <div class="projects__nameplate">
+                  <h2 class="projects__name">Проект "Шервинта-1"</h2>
+                </div>
+              </a>
+            </li>
 
             <!-- d012 -->
-            <a href="./designed/d012.html" class="projects__project">
-              <div class="projects__project-image">
-                <img src="./designed/d012/d012_01.jpg">
-              </div>
-              <div class="projects__project-name">
-                <h2>Проект "Гильге-4"</h2>
-              </div>
-            </a>
+            <li class="projects__list-element">
+              <a class="projects__card" href="./designed/d012.html">
+                <div class="projects__image-wrapper">
+                  <div class="projects__image-overlay"></div>
+                  <img class="projects__image" src="./designed/d012/d012_01_thumb.jpg" alt="Заглавное изображение проекта.">
+                </div>
+                <div class="projects__nameplate">
+                  <h2 class="projects__name">Проект "Гильге-4"</h2>
+                </div>
+              </a>
+            </li>
 
             <!-- d006 -->
-            <a href="./designed/d006.html" class="projects__project">
-              <div class="projects__project-image">
-                <img src="./designed/d006/d006_01.jpg">
-              </div>
-              <div class="projects__project-name">
-                <h2>Проект "Шервинта-2"</h2>
-              </div>
-            </a>
+            <li class="projects__list-element">
+              <a class="projects__card" href="./designed/d006.html">
+                <div class="projects__image-wrapper">
+                  <div class="projects__image-overlay"></div>
+                  <img class="projects__image" src="./designed/d006/d006_01_thumb.jpg" alt="Заглавное изображение проекта.">
+                </div>
+                <div class="projects__nameplate">
+                  <h2 class="projects__name">Проект "Шервинта-2"</h2>
+                </div>
+              </a>
+            </li>
 
             <!-- d001 -->
-            <a href="./designed/d001.html" class="projects__project">
-              <div class="projects__project-image">
-                <img src="./designed/d001/d001_01.jpg">
-              </div>
-              <div class="projects__project-name">
-                <h2>Проект "Шервинта-3"</h2>
-              </div>
-            </a>
+            <li class="projects__list-element">
+              <a class="projects__card" href="./designed/d001.html">
+                <div class="projects__image-wrapper">
+                  <div class="projects__image-overlay"></div>
+                  <img class="projects__image" src="./designed/d001/d001_01_thumb.jpg" alt="Заглавное изображение проекта.">
+                </div>
+                <div class="projects__nameplate">
+                  <h2 class="projects__name">Проект "Шервинта-3"</h2>
+                </div>
+              </a>
+            </li>
 
             <!-- d003 -->
-            <a href="./designed/d003.html" class="projects__project">
-              <div class="projects__project-image">
-                <img src="./designed/d003/d003_01.jpg">
-              </div>
-              <div class="projects__project-name">
-                <h2>Проект "Гильге-5"</h2>
-              </div>
-            </a>
+            <li class="projects__list-element">
+              <a class="projects__card" href="./designed/d003.html">
+                <div class="projects__image-wrapper">
+                  <div class="projects__image-overlay"></div>
+                  <img class="projects__image" src="./designed/d003/d003_01_thumb.jpg" alt="Заглавное изображение проекта.">
+                </div>
+                <div class="projects__nameplate">
+                  <h2 class="projects__name">Проект "Гильге-5"</h2>
+                </div>
+              </a>
+            </li>
 
             <!-- d013 -->
-            <a href="./designed/d013.html" class="projects__project">
-              <div class="projects__project-image">
-                <img src="./designed/d013/d013_01.jpg">
-              </div>
-              <div class="projects__project-name">
-                <h2>Проект "Шервинта-4"</h2>
-              </div>
-            </a>
+            <li class="projects__list-element">
+              <a class="projects__card" href="./designed/d013.html">
+                <div class="projects__image-wrapper">
+                  <div class="projects__image-overlay"></div>
+                  <img class="projects__image" src="./designed/d013/d013_01_thumb.jpg" alt="Заглавное изображение проекта.">
+                </div>
+                <div class="projects__nameplate">
+                  <h2 class="projects__name">Проект "Шервинта-4"</h2>
+                </div>
+              </a>
+            </li>
 
             <!-- d004 -->
-            <a href="./designed/d004.html" class="projects__project">
-              <div class="projects__project-image">
-                <img src="./designed/d004/d004_01.jpg">
-              </div>
-              <div class="projects__project-name">
-                <h2>Проект "Шервинта-5"</h2>
-              </div>
-            </a>
+            <li class="projects__list-element">
+              <a class="projects__card" href="./designed/d004.html">
+                <div class="projects__image-wrapper">
+                  <div class="projects__image-overlay"></div>
+                  <img class="projects__image" src="./designed/d004/d004_01_thumb.jpg" alt="Заглавное изображение проекта.">
+                </div>
+                <div class="projects__nameplate">
+                  <h2 class="projects__name">Проект "Шервинта-5"</h2>
+                </div>
+              </a>
+            </li>
 
             <!-- d011 -->
-            <a href="./designed/d011.html" class="projects__project">
-              <div class="projects__project-image">
-                <img src="./designed/d011/d011_01.jpg">
-              </div>
-              <div class="projects__project-name">
-                <h2>Проект "Шервинта-6"</h2>
-              </div>
-            </a>
+            <li class="projects__list-element">
+              <a class="projects__card" href="./designed/d011.html">
+                <div class="projects__image-wrapper">
+                  <div class="projects__image-overlay"></div>
+                  <img class="projects__image" src="./designed/d011/d011_01_thumb.jpg" alt="Заглавное изображение проекта.">
+                </div>
+                <div class="projects__nameplate">
+                  <h2 class="projects__name">Проект "Шервинта-6"</h2>
+                </div>
+              </a>
+            </li>
 
             <!-- d009 -->
-            <a href="./designed/d009.html" class="projects__project">
-              <div class="projects__project-image">
-                <img src="./designed/d009/d009_01.jpg">
-              </div>
-              <div class="projects__project-name">
-                <h2>Проект "Шервинта-7"</h2>
-              </div>
-            </a>
+            <li class="projects__list-element">
+              <a class="projects__card" href="./designed/d009.html">
+                <div class="projects__image-wrapper">
+                  <div class="projects__image-overlay"></div>
+                  <img class="projects__image" src="./designed/d009/d009_01_thumb.jpg" alt="Заглавное изображение проекта.">
+                </div>
+                <div class="projects__nameplate">
+                  <h2 class="projects__name">Проект "Шервинта-7"</h2>
+                </div>
+              </a>
+            </li>
 
             <!-- d008 -->
-            <a href="./designed/d008.html" class="projects__project">
-              <div class="projects__project-image">
-                <img src="./designed/d008/d008_01.jpg">
-              </div>
-              <div class="projects__project-name">
-                <h2>Проект "Гильге-6"</h2>
-              </div>
-            </a>
+            <li class="projects__list-element">
+              <a class="projects__card" href="./designed/d008.html">
+                <div class="projects__image-wrapper">
+                  <div class="projects__image-overlay"></div>
+                  <img class="projects__image" src="./designed/d008/d008_01_thumb.jpg" alt="Заглавное изображение проекта.">
+                </div>
+                <div class="projects__nameplate">
+                  <h2 class="projects__name">Проект "Гильге-6"</h2>
+                </div>
+              </a>
+            </li>
 
             <!-- d007 -->
-            <a href="./designed/d007.html" class="projects__project">
-              <div class="projects__project-image">
-                <img src="./designed/d007/d007_01.jpg">
-              </div>
-              <div class="projects__project-name">
-                <h2>Проект "Гильге-7"</h2>
-              </div>
-            </a>
+            <li class="projects__list-element">
+              <a class="projects__card" href="./designed/d007.html">
+                <div class="projects__image-wrapper">
+                  <div class="projects__image-overlay"></div>
+                  <img class="projects__image" src="./designed/d007/d007_01_thumb.jpg" alt="Заглавное изображение проекта.">
+                </div>
+                <div class="projects__nameplate">
+                  <h2 class="projects__name">Проект "Гильге-7"</h2>
+                </div>
+              </a>
+            </li>
 
             <!-- d015 -->
-            <a href="./designed/d015.html" class="projects__project">
-              <div class="projects__project-image">
-                <img src="./designed/d015/d015_01.jpg">
-              </div>
-              <div class="projects__project-name">
-                <h2>Проект "Гильге-8"</h2>
-              </div>
-            </a>
+            <li class="projects__list-element">
+              <a class="projects__card" href="./designed/d015.html">
+                <div class="projects__image-wrapper">
+                  <div class="projects__image-overlay"></div>
+                  <img class="projects__image" src="./designed/d015/d015_01_thumb.jpg" alt="Заглавное изображение проекта.">
+                </div>
+                <div class="projects__nameplate">
+                  <h2 class="projects__name">Проект "Гильге-8"</h2>
+                </div>
+              </a>
+            </li>
 
-          </div>
+          </ul>
         </div>
       </section>
     </main>
 
-    <!-- ПОДВАЛ -->
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer__container">
         <a class="logo" href="./index.html">
@@ -217,10 +262,9 @@
         <a class="footer__email" href="mailto:as-kvadrat@gmail.com">as-kvadrat@gmail.com</a>
         <span class="footer__address">Калининград, Россия</span>
       </div>
+      </div>
     </footer>
-  </dev>
 
-  <script src="scripts/projects.js"></script>
 </body>
 
 </html>
