@@ -1,15 +1,28 @@
 .intro {
   width: 100%;
+  margin: 72px 0 0 0; // верхний отступ равен высоте хедера и меняется медиазапросами в соответствии с ним
   @include flex(column, center);
   background-color: #DCD9D4;
   background-image: linear-gradient(to top, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
   background-blend-mode: soft-light,screen;
+
+  @media screen and (max-width: $screen-xl) {
+    margin: 64px 0 0 0;
+  }
 }
 
 .intro__container {
   width: 100%;
   max-width: 1440px;
   @include flex();
+
+  @media screen and (max-width: $screen-xxxl) {
+    padding: 0 60px 0 60px;
+  }
+
+  @media screen and (max-width: $screen-xxl) {
+    padding: 0 52px 0 52px;
+  }
 }
 
 .intro__text {
@@ -20,6 +33,10 @@
 .intro__alignment {
   width: 80%;
   @include flex(column);
+
+  @media screen and (max-width: $screen-xxl) {
+    width: 90%;
+  }
 }
 
 .intro__heading {
@@ -27,6 +44,18 @@
   font-size: 48px;
   line-height: 120%;
   color: $black;
+
+  @media screen and (max-width: $screen-xxxl) {
+    font-size: 44px;
+  }
+
+  @media screen and (max-width: $screen-xxl) {
+    font-size: 36px;
+  }
+
+  @media screen and (max-width: $screen-xl) {
+    font-size: 28px;
+  }
 }
 
 .intro__paragraph {
@@ -35,6 +64,11 @@
   font-size: 16px;
   line-height: 160%;
   color: $black;
+
+  @media screen and (max-width: $screen-xl) {
+    margin: 18px 0 28px 0;
+    font-size: 14px;
+  }
 }
 
 .intro__paragraph-bold {
@@ -49,6 +83,10 @@
   text-transform: uppercase;
   color: $color-main;
   transition: 0.2s linear;
+
+  @media screen and (max-width: $screen-xl) {
+    font-size: 12px;
+  }
 
   span {
     transition: 0.2s linear;
@@ -79,92 +117,3 @@
   height: 100%;
   object-fit: cover;
 }
-
-
-// .intro {
-//   width: 100%;
-//   padding: 72px 0 0 0;
-//   @include flex(column, center);
-//   background-color: #DCD9D4;
-//   background-image: linear-gradient(to top, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
-//   background-blend-mode: soft-light,screen;
-
-//   @media (max-width: $screen-lg) {
-//     padding: 64px 0 0 0;
-//   }
-// }
-
-// .intro__container {
-//   width: 100%;
-//   max-width: 1440px;
-//   @include flex();
-// }
-
-// .intro__info {
-//   width: 50%;
-//   padding: 0 100px 0 60px;
-//   @include flex(column, normal, center);
-
-//   @media (max-width: $screen-xxl) {
-//     padding: 0 60px 0 60px;
-//   }
-
-//   @media (max-width: $screen-lg) {
-//     width: 60%;
-//     padding: 0 40px 0 40px;
-//   }
-// }
-
-// .intro__image {
-//   width: 50%;
-//   height: 0;
-//   padding: 50% 0 0 0;
-//   @include bg-image('../images/intro.jpg');
-
-//   @media (max-width: $screen-lg) {
-//     width: 40%;
-//     padding: 60% 0 0 0;
-//   }
-// }
-
-// .intro__heading {
-//   @extend %inter-regular;
-//   font-size: 48px;
-//   line-height: 120%;
-//   color: $black;
-
-//   @media (max-width: $screen-xxl) {
-//     font-size: 48px;
-//   }
-
-//   @media (max-width: $screen-xl) {
-//     font-weight: 600;
-//     font-size: 28px;
-//   }
-// }
-
-// .intro__paragraph {
-//   margin: 24px 0 40px 0;
-//   @extend %inter-regular;
-//   font-size: 16px;
-//   line-height: 160%;
-//   color: $black;
-
-//   span {
-//     @extend %inter-semibold;
-//   }
-
-//   @media (max-width: $screen-xxl) {
-//     margin: 20px 0 32px 0;
-//   }
-
-//   @media (max-width: $screen-xl) {
-//     margin: 16px 0 28px 0;
-//   }
-
-//   @media (max-width: $screen-lg) {
-//     margin: 12px 0 20px 0;
-//     font-size: 14px;
-//     line-height: 140%;
-//   }
-// }

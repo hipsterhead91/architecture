@@ -24,11 +24,10 @@
 .footer__container {
   width: 100%;
   max-width: 1440px;
-  // padding: 0 60px 0 60px;
   @include flex(column);
 
-  @media (max-width: $screen-lg) {
-    padding: 0 40px 0 40px;
+  @media screen and (max-width: $screen-xxxl) {
+    padding: 0 60px 0 60px;
   }
 }
 
