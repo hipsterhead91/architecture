@@ -4,21 +4,33 @@
   margin: auto 0 0 0;
   @include flex(column, center);
 
-  @media (max-width: $screen-xxl) {
+  @media screen and (max-width: 1399px) {
     padding: 180px 0 80px 0;
   }
 
-  @media (max-width: $screen-xl) {
-    padding: 160px 0 60px 0;
+  @media screen and (max-width: 1199px) {
+    padding: 160px 0 80px 0;
   }
 
-  @media (max-width: $screen-lg) {
-    padding: 140px 0 60px 0;
+  @media screen and (max-width: 991px) {
+    padding: 120px 0 60px 0;
   }
-}
 
-.footer_colored {
-  background-color: $color-main;
+  @media screen and (max-width: 767px) {
+    padding: 100px 0 60px 0;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 80px 0 48px 0;
+  }
+
+  @media screen and (max-width: 479px) {
+    padding: 64px 0 32px 0;
+  }
+
+  @media screen and (max-width: 359px) {
+    padding: 64px 0 24px 0;
+  }
 }
 
 .footer__container {
@@ -26,18 +38,55 @@
   max-width: 1440px;
   @include flex(column);
 
-  @media screen and (max-width: $screen-xxxl) {
+  @media screen and (max-width: 1599px) {
     padding: 0 60px 0 60px;
+  }
+
+  @media screen and (max-width: 1399px) {
+    padding: 0 52px 0 52px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 0 48px 0 48px;
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 0 44px 0 44px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 0 40px 0 40px;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 0 36px 0 36px;
+  }
+
+  @media screen and (max-width: 479px) {
+    padding: 0 24px 0 24px;
+  }
+
+  @media screen and (max-width: 359px) {
+    padding: 0 16px 0 16px;
   }
 }
 
 .footer__phone {
-  margin: 16px 0 0 0;
+  margin: 20px 0 0 0;
   @extend %inter-extralight;
   font-size: 20px;
   letter-spacing: 2px;
   color: $black;
   transition: 0.2s linear;
+
+  @media screen and (max-width: 991px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 575px) {
+    margin: 16px 0 0 0;
+    font-size: 16px;
+  }
 
   &:hover {
     color: $color-main;
@@ -52,6 +101,15 @@
   color: $black;
   transition: 0.2s linear;
 
+  @media screen and (max-width: 991px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 575px) {
+    margin: 8px 0 8px 0;
+    font-size: 16px;
+  }
+
   &:hover {
     color: $color-main;
   }
@@ -62,4 +120,12 @@
   font-size: 20px;
   letter-spacing: 2px;
   color: $black;
+
+  @media screen and (max-width: 991px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 575px) {
+    font-size: 16px;
+  }
 }

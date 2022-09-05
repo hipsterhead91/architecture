@@ -8,6 +8,38 @@
   width: 100%;
   max-width: 1440px;
   @include flex(column);
+
+  @media screen and (max-width: 1599px) {
+    padding: 0 60px 0 60px;
+  }
+
+  @media screen and (max-width: 1399px) {
+    padding: 0 52px 0 52px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 0 48px 0 48px;
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 0 44px 0 44px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 0 40px 0 40px;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 0 36px 0 36px;
+  }
+
+  @media screen and (max-width: 479px) {
+    padding: 0 24px 0 24px;
+  }
+
+  @media screen and (max-width: 359px) {
+    padding: 0 16px 0 16px;
+  }
 }
 
 .project__back-link {

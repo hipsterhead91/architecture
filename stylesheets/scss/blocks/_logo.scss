@@ -9,7 +9,7 @@
   @include bg-image('../images/logo.png');
   user-select: none;
 
-  &_small {
+  @media screen and (max-width: 991px) {
     width: 40px;
     height: 40px;
     margin: 0 10px 0 0;
@@ -20,7 +20,7 @@
   height: 48px;
   @include flex(column, center, space-between);
 
-  &_small {
+  @media screen and (max-width: 991px) {
     height: 40px;
   }
 }
@@ -34,7 +34,7 @@
   color: $black;
   user-select: none;
 
-  &_small {
+  @media screen and (max-width: 991px) {
     font-size: 26px;
   }
 }
@@ -48,7 +48,7 @@
   color: $black;
   user-select: none;
 
-  &_small {
+  @media screen and (max-width: 991px) {
     font-size: 8px;
   }
 }

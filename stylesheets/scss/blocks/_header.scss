@@ -6,13 +6,13 @@
   width: 100%;
   height: 72px;
   @include flex(column, center);
-  background-color: rgba(250, 250, 250, 0.7);
-  backdrop-filter: blur(5px);
+  background-color: $white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-  @media screen and (max-width: $screen-xl) {
+  @media screen and (max-width: 991px) {
     height: 64px;
   }
+
 }
 
 .header__container {
@@ -22,32 +22,70 @@
   max-width: 1440px;
   @include flex(row, center, space-between);
 
-  @media screen and (max-width: $screen-xxxl) {
+  @media screen and (max-width: 1599px) {
     padding: 0 60px 0 60px;
   }
 
-  @media screen and (max-width: $screen-xxl) {
+  @media screen and (max-width: 1399px) {
     padding: 0 52px 0 52px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 0 48px 0 48px;
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 0 44px 0 44px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 0 40px 0 40px;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 0 36px 0 36px;
+  }
+
+  @media screen and (max-width: 479px) {
+    padding: 0 24px 0 24px;
+  }
+
+  @media screen and (max-width: 359px) {
+    padding: 0 16px 0 16px;
   }
 }
 
 .header__menu {
   @include flex();
 
-  @media (max-width: $screen-md) {
+  @media (max-width: 767px) {
     position: absolute;
     top: 64px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 64px);
-    padding: 20px 40px 20px 40px;
+    height: auto;
+    padding: 32px 40px 44px 40px;
     @include flex(row, normal, flex-end);
-    background-color: rgba(250, 250, 250, 0.9);
+    background-color: rgba(250, 250, 250, 0.7);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 575px) {
+    padding: 32px 36px 32px 36px;
+  }
+
+  @media (max-width: 479px) {
+    padding: 32px 24px 32px 24px;
+  }
+
+  @media (max-width: 359px) {
+    padding: 32px 16px 32px 16px;
   }
 }
 
 .header__menu_hidden {
-  @media (max-width: $screen-md) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
@@ -55,8 +93,8 @@
 .header__link-list {
   @include flex(row, center, space-between);
 
-  @media (max-width: $screen-md) {
-    @include flex(column, flex-end, flex-start);
+  @media (max-width: 767px) {
+    @include flex(column, flex-end, normal);
   }
 }
 
@@ -66,7 +104,13 @@
   &:not(:last-child) {
     margin: 0 72px 0 0;
 
+    @media (max-width: 767px) {
+      margin: 0 0 32px 0;
+    }
 
+    @media (max-width: 575px) {
+      margin: 0 0 28px 0;
+    }
   }
 }
 
@@ -76,7 +120,7 @@
   color: $black;
   transition: 0.2s linear;
 
-  @media screen and (max-width: $screen-xl) {
+  @media screen and (max-width: 575px) {
     font-size: 18px;
   }
 
@@ -88,7 +132,7 @@
 .header__menu-button {
   display: none;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: 767px) {
     width: 32px;
     height: 24px;
     @include flex(column, center, space-between);
