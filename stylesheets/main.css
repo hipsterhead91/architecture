@@ -732,7 +732,7 @@ button {
 
 @media screen and (max-width: 991px) {
   .intro__image {
-    content: url("../../../images/intro-2.jpg");
+    content: url("../images/intro-2.jpg");
     -o-object-position: top;
        object-position: top;
   }
@@ -1182,19 +1182,19 @@ button {
 
 @media (max-width: 767px) {
   #carousel-1 {
-    content: url("../../../images/carousel-1_beige.jpg");
+    content: url("../images/carousel-1_beige.jpg");
   }
 }
 
 @media (max-width: 767px) {
   #carousel-2 {
-    content: url("../../../images/carousel-2_beige.jpg");
+    content: url("../images/carousel-2_beige.jpg");
   }
 }
 
 @media (max-width: 767px) {
   #carousel-3 {
-    content: url("../../../images/carousel-3_beige.jpg");
+    content: url("../images/carousel-3_beige.jpg");
   }
 }
 
