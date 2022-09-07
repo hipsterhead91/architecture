@@ -2378,6 +2378,13 @@ button {
   list-style: none;
 }
 
+@media screen and (max-width: 1399px) {
+  .projects__list {
+    grid-column-gap: 24px;
+    grid-row-gap: 36px;
+  }
+}
+
 .projects__list-element {
   position: relative;
   width: 100%;
