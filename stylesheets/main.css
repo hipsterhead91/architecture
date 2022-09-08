@@ -45,7 +45,7 @@ button {
   font-weight: 200;
 }
 
-.logo__subheading, .intro__heading, .intro__paragraph, .about__heading, .about__paragraph, .carousel__slide-paragraph, .services__item-heading, .services__item-paragraph, .details__link, .projects__heading, .projects__description, .project__heading, .project__note, .project__paragraph, .project__detail, .contacts__heading, .contacts__description {
+.logo__subheading, .intro__heading, .intro__paragraph, .about__heading, .about__paragraph, .carousel__slide-paragraph, .services__item-heading, .services__item-paragraph, .details__link, .projects__heading, .projects__description, .project__heading, .project__note, .project__paragraph, .project__detail, .contacts__heading, .contacts__description, .contacts__data {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -63,7 +63,7 @@ button {
   font-weight: 600;
 }
 
-.projects__back-link, .project__back-link, .contacts__back-link {
+.projects__back-link, .project__back-link, .contacts__back-link, .contacts__subheading {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1244,7 +1244,7 @@ button {
   }
 }
 
-@media (max-width: 765px) {
+@media (max-width: 767px) {
   .carousel__slide-text {
     padding: 24px 24px 24px 24px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -1258,7 +1258,7 @@ button {
   color: #7B6456;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 767px) {
   .carousel__slide-heading {
     margin: 0 0 4px 0;
     font-size: 12px;
@@ -1272,7 +1272,7 @@ button {
   color: #464646;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 767px) {
   .carousel__slide-paragraph {
     font-size: 14px;
     color: #bebebe;
@@ -3217,4 +3217,93 @@ button {
     margin: 0 0 20px 0;
     font-size: 14px;
   }
+}
+
+.contacts__list {
+  margin: 20px 0 40vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  list-style: none;
+}
+
+@media screen and (max-width: 991px) {
+  .contacts__list {
+    margin: 16px 0 40vh 0;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .contacts__list {
+    margin: 12px 0 40vh 0;
+  }
+}
+
+.contacts__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.contacts__contact:not(:last-child) {
+  margin: 0 0 32px 0;
+}
+
+@media screen and (max-width: 991px) {
+  .contacts__contact:not(:last-child) {
+    margin: 0 0 28px 0;
+  }
+}
+
+.contacts__subheading {
+  margin: 0 0 4px 0;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  color: #282828;
+  text-transform: uppercase;
+}
+
+.contacts__data {
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: #7B6456;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+@media screen and (max-width: 991px) {
+  .contacts__data {
+    font-size: 26px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .contacts__data {
+    font-size: 22px;
+  }
+}
+
+.contacts__data:hover {
+  color: #91786e;
 }
