@@ -14,6 +14,10 @@
     height: 40px;
     margin: 0 10px 0 0;
   }
+
+  &_light {
+    @include bg-image('../images/logo-light.png');
+  }
 }
 
 .logo__text {
@@ -37,6 +41,10 @@
   @media screen and (max-width: 991px) {
     font-size: 26px;
   }
+
+  &_light {
+    color: $gray-dark;
+  }
 }
 
 .logo__subheading {
@@ -50,5 +58,9 @@
 
   @media screen and (max-width: 991px) {
     font-size: 8px;
+  }
+
+  &_light {
+    color: $gray-dark;
   }
 }

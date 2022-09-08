@@ -40,16 +40,15 @@
 
   @media screen and (max-width: 991px) {
     height: 400px;
-    padding: 0 44px 0 44px;
+    padding: 0 28px 0 28px;
   }
 
   @media screen and (max-width: 767px) {
-    padding: 0 40px 0 40px;
+    padding: 0 24px 0 24px;
   }
 
   @media screen and (max-width: 575px) {
     // height: 440px;
-    // padding: 0 36px 0 36px;
     position: relative;
     height: 0;
     padding: 100% 0 0 0;
@@ -134,7 +133,8 @@
   transition: 0.2s linear;
   border: 3px solid $color-accent;
   padding: 12px 20px 12px 20px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
 
   @media screen and (max-width: 991px) {
     font-size: 28px;

@@ -1,7 +1,17 @@
 .projects {
   width: 100%;
-  padding: 32px 0 0 0;
+  padding: 28px 0 0 0;
+  margin: 72px 0 0 0;
   @include flex(column, center);
+
+  @media screen and (max-width: 991px) {
+    padding: 24px 0 0 0;
+    margin: 64px 0 0 0;
+  }
+
+  @media screen and (max-width: 359px) {
+    padding: 20px 0 0 0;
+  }
 }
 
 .projects__container {
@@ -22,23 +32,23 @@
   }
 
   @media screen and (max-width: 991px) {
-    padding: 0 44px 0 44px;
+    padding: 0 28px 0 28px;
   }
 
   @media screen and (max-width: 767px) {
-    padding: 0 40px 0 40px;
-  }
-
-  @media screen and (max-width: 575px) {
-    padding: 0 36px 0 36px;
-  }
-
-  @media screen and (max-width: 479px) {
     padding: 0 24px 0 24px;
   }
 
-  @media screen and (max-width: 359px) {
+  @media screen and (max-width: 575px) {
+    padding: 0 20px 0 20px;
+  }
+
+  @media screen and (max-width: 479px) {
     padding: 0 16px 0 16px;
+  }
+
+  @media screen and (max-width: 359px) {
+    padding: 0 12px 0 12px;
   }
 }
 
@@ -56,19 +66,48 @@
 }
 
 .projects__heading {
-  margin: 60px 0 12px 0;
+  margin: 40px 0 12px 0;
   @extend %inter-regular;
   font-size: 32px;
   color: $gray-darkest;
+
+  @media screen and (max-width: 991px) {
+    margin: 32px 0 8px 0;
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 359px) {
+    margin: 28px 0 8px 0;
+    font-size: 24px;
+  }
 }
 
 .projects__description {
-  max-width: 620px;
+  // max-width: 620px;
+  max-width: calc(50% - 16px);
   margin: 0 0 28px 0;
   @extend %inter-regular;
   font-size: 16px;
   line-height: 140%;
   color: $gray-dark;
+
+  @media screen and (max-width: 1399px) {
+    max-width: calc(50% - 12px);
+  }
+
+  @media screen and (max-width: 1199px) {
+    max-width: 65%;
+  }
+
+  @media screen and (max-width: 991px) {
+    max-width: 100%;
+    margin: 0 0 24px 0;
+  }
+
+  @media screen and (max-width: 359px) {
+    margin: 0 0 20px 0;
+    font-size: 14px;
+  }
 }
 
 .projects__description-bold {
@@ -87,6 +126,31 @@
     grid-column-gap: 24px;
     grid-row-gap: 36px;
   }
+
+  @media screen and (max-width: 1199px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 28px;
+    grid-row-gap: 40px;
+  }
+
+  @media screen and (max-width: 991px) {
+    grid-column-gap: 24px;
+    grid-row-gap: 32px;
+  }
+
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 24px;
+  }
+
+  @media screen and (max-width: 575px) {
+    grid-column-gap: 20px;
+    grid-row-gap: 24px;
+  }
+
+  @media screen and (max-width: 479px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .projects__list-element {
@@ -95,6 +159,18 @@
   height: 0;
   padding: 0 0 calc(100% + 80px + 4px) 0;
   @include flex(column, center, flex-end);
+
+  @media screen and (max-width: 1399px) {
+    padding: 0 0 calc(100% + 72px + 4px) 0;
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 0 0 calc(100% + 68px + 4px) 0;
+  }
+
+  @media screen and (max-width: 479px) {
+    padding: 0 0 calc(80% + 68px + 4px) 0;
+  }
 }
 
 .projects__card {
@@ -126,6 +202,14 @@
   position: relative;
   width: 100%;
   height: calc(100% - 80px);
+
+  @media screen and (max-width: 1399px) {
+    height: calc(100% - 72px);
+  }
+
+  @media screen and (max-width: 991px) {
+    height: calc(100% - 68px);
+  }
 }
 
 .projects__image-overlay {
@@ -151,6 +235,14 @@
   background-color: #DCD9D4;
   background-image: linear-gradient(to top, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
   background-blend-mode: soft-light,screen;
+
+  @media screen and (max-width: 1399px) {
+    height: 72px;
+  }
+
+  @media screen and (max-width: 991px) {
+    height: 68px;
+  }
 }
 
 .projects__name {
@@ -159,6 +251,26 @@
   color: $color-main;
   text-align: center;
   transition: 0.2s linear;
+
+  @media screen and (max-width: 1399px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 991px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 479px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 359px) {
+    font-size: 16px;
+  }
 }
 
 
