@@ -57,7 +57,7 @@ button {
   font-weight: 500;
 }
 
-.header__link, .logo__heading, .intro__paragraph-bold, .intro__link, .about__paragraph-bold, .carousel__slide-heading, .services__heading, .projects__description-bold, .projects__name, .project__subheading {
+.header__link, .logo__heading, .intro__paragraph-bold, .intro__link, .about__paragraph-bold, .carousel__slide-heading, .services__heading, .projects__description-bold, .projects__name, .project__subheading, .contacts__description-bold {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;

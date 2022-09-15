@@ -110,6 +110,10 @@
   }
 }
 
+.contacts__description-bold {
+  @extend %inter-semibold;
+}
+
 .contacts__list {
   margin: 20px 0 40vh 0;
   @include flex(column);
