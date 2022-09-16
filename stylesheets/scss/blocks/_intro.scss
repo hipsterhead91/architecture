@@ -166,8 +166,11 @@
   object-fit: cover;
 
   @media screen and (max-width: 991px) {
+    object-position: 50% 65%;
+  }
+
+  @media screen and (max-width: 767px) {
     content: url('../images/intro-2.jpg');
-    object-position: top;
   }
 }
 

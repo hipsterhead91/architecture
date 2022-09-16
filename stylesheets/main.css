@@ -747,9 +747,14 @@ button {
 
 @media screen and (max-width: 991px) {
   .intro__image {
+    -o-object-position: 50% 65%;
+       object-position: 50% 65%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .intro__image {
     content: url("../images/intro-2.jpg");
-    -o-object-position: top;
-       object-position: top;
   }
 }
 
