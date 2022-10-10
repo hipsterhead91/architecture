@@ -2903,6 +2903,16 @@ button {
   }
 }
 
+.project__link {
+  color: #7B6456;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.project__link:hover {
+  color: #91786e;
+}
+
 .project__subheading {
   margin: 0 8px 0 0;
   font-size: 16px;

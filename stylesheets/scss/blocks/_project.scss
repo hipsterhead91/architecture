@@ -132,6 +132,15 @@
   }
 }
 
+.project__link {
+  color: $color-main;
+  transition: 0.2s linear;
+
+  &:hover {
+    color: $color-second;
+  }
+}
+
 .project__subheading {
   margin: 0 8px 0 0;
   @extend %inter-semibold;
